@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-sm-6">
+    <app-card
+      title="Average Age"
+      [value]="averageAge | number: '.0-0'"
+    ></app-card>
+  </div>
+  <div class="col-sm-6">
+    <app-card
+      title="Standard Deviation"
+      [value]="standardDeviation | number: '.1-2'"
+    ></app-card>
+  </div>
+</div>
+<div class="row mt-4">
+  <div class="col">
+    <app-list-client></app-list-client>
+  </div>
+</div>
